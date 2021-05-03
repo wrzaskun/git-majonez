@@ -1,0 +1,24 @@
+mkdir git-majonez
+cd git-majonez/
+git init
+touch main.cpp
+vim main.cpp
+git add main.cpp
+git commit -m"Initial commit"
+vim main.cpp
+git add main.cpp
+git commit -m"Farewell changed"
+git remote add origin https://github.com/wrzaskun/git-majonez.git
+git push -u origin master
+git checkout -b cs HEAD^
+vim main.cpp
+git add .
+git commit -m"Greetings"
+git push origin cs
+git merge cs
+git stash
+git merge cs
+vim main.cpp
+git add main.cpp
+git commit
+git push
